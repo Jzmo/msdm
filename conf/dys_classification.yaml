@@ -1,0 +1,25 @@
+model:
+  _name: dysarthria_cnn
+  input_channels: 3
+  num_classes: 4
+
+task:
+  _name: dysarthria_classification
+  data: data
+
+dataset:
+  batch_size: 32  # Specify batch size here or use max_tokens
+
+optimizer:
+  _name: adam
+  lr: [0.001]
+
+lr_scheduler:
+  _name: fixed
+
+criterion:
+  _name: cross_entropy
+
+checkpoint:
+  save_interval: 1
+  keep_last_epochs: 5

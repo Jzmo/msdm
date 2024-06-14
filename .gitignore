@@ -1,0 +1,25 @@
+# Ignore temporary files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.log
+*.sh~
+*.py~
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+env/
+venv/
+*.so
+*.dylib
+*.dll
+outputs/
+data/
+exp/
+checkpoints/
+misc/
+tmp.txt
+path.sh
+feats/
